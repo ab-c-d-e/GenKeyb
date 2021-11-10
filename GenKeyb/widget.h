@@ -20,6 +20,6 @@ private:
     GenKeybLogic *genKeyb;
 public slots:
     void onBtnClicked();
-    void onDispChanged();
+    void onDispChanged(QString);
 };
 #endif // WIDGET_H
