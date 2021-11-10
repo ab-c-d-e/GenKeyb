@@ -1,6 +1,6 @@
 #ifndef WIDGET_H
 #define WIDGET_H
-
+#include "genkeyblogic.h"
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -17,5 +17,9 @@ public:
 
 private:
     Ui::Widget *ui;
+    GenKeybLogic *genKeyb;
+public slots:
+    void onBtnClicked();
+    void onDispChanged();
 };
 #endif // WIDGET_H
